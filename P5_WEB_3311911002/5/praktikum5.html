@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Praktikum 5</title>
+    <style>
+       th{
+            text-align: right;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulir Isian Pendaftaran Calon Siswa Baru</h1>
+    <form id="formLinar" name="formLinar">
+        <center>
+        <table>
+            <tr>
+                <th>NISN :</th>
+                <td><input type="text" name="nisn" id="nisn" size="10" required onkeypress="return bukanHuruf(event)"></td>
+            </tr>
+            <tr>
+                <th>Nama Lengkap :</th>
+                <td><input type="text" name="nama" id="nama" size="35" required onkeypress="return bukanAngka(event)"></td>
+            </tr>
+            <tr>
+                <th>Tempat Tanggal Lahir :</th>
+                <td><input type="text" name="tempatlahir" id="tempatlahir" size="15" required> <input type="text" name="tanggallahir" id="tanggallahir" size="10" required> </td>
+            </tr>
+            <tr>
+                <th>Kelamin :</th>
+                <td>  <input type="radio" name="kelamin" value="Laki-Laki">Laki-Laki  <input type="radio" name="kelamin" value="Perempuan">Perempuan </td>
+            </tr>
+            <tr>
+                <th>Agama :</th>
+                <td> 
+                    <select name="agama" id="agama" size="1" required onchange="pilihAgama()">
+                        <option value="">- Pilih -</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Katholik">Katholik</option>
+                        <option value="Konghucu">Konghucu</option>
+                        <option value="Kristen">Kristen</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Anak Ke :</th>
+                <td> 
+                   <input type="text" name="anakke" id="anakke" size="5" required> 
+                </td>
+            </tr>
+            <tr>
+                <th>Jumlah Saudara :</th>
+                <td> 
+                    <input type="text" name="jumlahsaudara" id="jumlahsaudara" size="5" required>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td> 
+                    <input type="button" value="Proses Pendaftaran" onclick="validasi()" required>
+                    <input type="reset" value="Reset" >
+                </td>
+            </tr>
+        </table>
+    </center>
+    </form>
+</body>
+<script>
+    function validasi() {
+        if(document.getElementById("nisn").value == ''){
+            alert("Anda belum mengisi NISN");
+            document.getElementById("nisn").focus();
+            return false;
+        }
+        if(document.getElementById("nama").value == ''){
+            alert("Anda belum mengisi Nama");
+            document.getElementById("nama").focus();
+            return false;
+        }
+        if(document.getElementById("tempatlahir").value == ''){
+            alert("Anda belum mengisi Tempat Lahir");
+            document.getElementById("tempatlahir").focus();
+            return false;
+        }
+        if(document.getElementById("tanggallahir").value == ''){
+            alert("Anda belum mengisi Tanggal Lahir");
+            document.getElementById("tanggallahir").focus();
+            return false;
+        }
+        if(!document.getElementsByName("kelamin")[0].checked && !document.getElementsByName("kelamin")[1].checked){
+            alert("Anda belum mengisi Kelamin");
+            document.getElementByName("kelamin").focus();
+            return false;
+        }
+        if(document.getElementById("agama").value == ''){
+            alert("Anda belum mengisi Agama");
+            document.getElementById("agama").focus();
+            return false;
+        }
+        if(document.getElementById("anakke").value == ''){
+            alert("Anda belum mengisi Anak ke");
+            document.getElementById("anakke").focus();
+            return false;
+        }
+        if(document.getElementById("jumlahsaudara").value == ''){
+            alert("Anda belum mengisi Jumlah Saudara");
+            document.getElementById("jumlahsaudara").focus();
+            return false;
+        }
+        konfirmasi();
+    }
+    function bukanHuruf(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if(charCode >= 65 && charCode <= 122)
+        return false;
+        return true;
+    }
+    function bukanAngka(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if((charCode < 48 || charCode > 57)&& charCode>32)
+        return true;
+        return false;
+    }
+    function pilihAgama() {
+        var agamastr = (document.formLinar.agama.value);
+        alert("Anda memilih Agama "+agamastr);
+    }
+    function konfirmasi() {
+        if(confirm("Apakah anda yakin ingin menyimpan?")){
+            alert("Data sudah tersimpan");
+        }
+        else{
+
+        }
+    }
+</script>
+</html>

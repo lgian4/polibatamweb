@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <title>Validasi Angka</title>
+</head>
+<body>
+    <form method="post">
+        <span>Masukkan Kode Pembayaran</span>
+        <input type="text" name="nama_lengkap" required onkeypress="return harusAngka(event)">
+        <input type="submit" name="proses">
+    </form>
+</body>
+</html>
+<script>
+    function harusAngka(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if((charCode < 48 || charCode > 57)&& charCode>32)
+        return false;
+        return true;
+    }
+    
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Validasi Input Data Hanya Huruf</title>
+    <script type="text/javascript">
+        function validation() {
+            var validasiHuruf = /^[a-zA-Z]+$/;
+            var nama = document.getElementById("nama");
+            if (nama.value.match(validasiHuruf)){
+                alert("Nama anda adalah "+nama.value);
+            }
+            else{
+                alert("Masukkan nama anda!\n Format wajib huruf");
+                nama.value = "";
+                nama.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    Nama: <br>
+    <input type="text" name="nama" id="nama">
+    <button onclick="validation()">Cek</button>
+</body>
+</html>

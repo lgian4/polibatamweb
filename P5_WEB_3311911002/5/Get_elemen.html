@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Membuat Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<script type="text/javascript">
+    function validasi(){
+        var nama = document.getElementById("nama").value;
+        alert("Nama anda adalah :"+ nama);
+    }
+</script>
+<body>
+    <div>
+        <form action="#" method="" onsubmit="validasi()">
+            <div>
+                <label>Nama Lengkap:</label>
+                <input type="text" name="nama" id="nama"/>
+            </div>
+            <div>
+                <input type="submit" value="Daftar" class="tombol">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

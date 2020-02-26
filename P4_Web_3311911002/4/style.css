@@ -1,0 +1,218 @@
+/* <--! Untuk Format body halaman web dengan id wrap --> */
+#wrap {
+width:1000px;
+height:800px;
+margin:0 auto;
+background-color:white
+}
+/* <--! Untuk mengatur format header dan judul halaman web dengan id header dan judul--> */
+#header{
+background-image:url(header.jpg);
+border-bottom-right-radius:50px;
+width:730px;
+height:300px;
+margin:auto;
+box-shadow:0 0 10px rgba(0,0,0,.25);
+float:right
+}
+#judul {
+font-size:50px;
+text-align:right;
+padding:200px 40px 0 0
+}
+#judul a { color:white; text-decoration:none }
+#judul a:hover { color:grey }
+.desc {
+font-size:30px;
+color:white;
+text-align:right;
+padding: 0 40px 0 0
+}
+/* <--! Untuk mengatur format menu halaman web dengan id menu--> */
+#menu ul {
+float:right;
+background: #2196f3;
+padding:0 0px;
+position:relative;
+box-shadow:0 0 10px rgba(0,0,0,.25);
+list-style:none;
+width:730px
+}
+#menu ul:after { content:""; clear:both; display:block }
+#menu ul li { float:left }
+#menu ul li:hover { background:#3f51b5 }
+#menu ul li a {
+display:block;
+color:white;
+padding:10px 20px;
+text-decoration:none
+}
+#menu ul li:hover a { color: white }
+#menu ul li:hover > ul { display:block }
+#menu ul ul {
+background:#2196f3;
+position:absolute;
+padding:0;
+top:100%;
+display:none;
+width:auto
+}
+#menu ul ul li { float:none; position:relative }
+#menu ul ul li a { padding:10px 30px; color:white }
+#menu ul ul li a:hover { background:#3f51b5; color:white }
+#menu ul ul ul {position: absolute; left: 100%; top:0 } 
+/* <--! Untuk mengatur format menu kiri halaman web dengan id kiri--> */
+#kiri {
+border-top-left-radius:50px;
+background-color:white;
+width:250px;
+height:auto;
+margin:0 0 20px;
+float:left;
+list-style:none;
+box-shadow:0 0 10px rgba(0,0,0,.25);
+float:left
+}
+#kiri ul { margin:0 0 20px 20px;padding:0; liststyle:none;width:200px }
+#kiri li { width:100%; margin:0;padding:0; liststyle:none }
+#kiri h2 {
+margin:0px 0 0px 0;
+padding:5px 12px;
+color:white;
+font-size:20px;
+background: #2196f3
+}
+#kiri a {
+display:block;
+padding:3px 10px;
+text-decoration:none;
+color:black;
+border-bottom:1px dotted #3f51b5
+}
+#kiri a:hover { background:#3f51b5; color:white }
+/* <--! Untuk mengatur format konten atau isi halaman web dengan id konten--> */
+#konten {
+background-color:white;
+width:690px;
+height:auto;
+margin:0 0 20px;
+padding:20px 20px 20px 20px;
+float:right;
+box-shadow:0 0 10px rgba(0,0,0,.25)
+}
+/* <--! Untuk mengatur format konten atau isi halaman web dengan id konten--> */
+#konten {
+background-color:white;
+width:690px;
+height:auto;
+margin:0 0 20px;
+padding:20px 20px 20px 20px;
+float:right;
+box-shadow:0 0 10px rgba(0,0,0,.25)
+}
+/* <--! Untuk mengatur format galeri halaman web dengan id posttitle--> */
+.posttitle {
+text-decoration:none;
+font-size:30px;
+font-family:Arial;
+color:#3f51b5;
+}
+.posttitle a { text-decoration:none }
+.post{ margin:0 20px 0 20px; text-align:justify }
+b a { color:#3f51b5; text-decoration:none }
+img { width:200; height:200 }
+/* <--! Untuk mengatur format galeri halaman web dengan id posttitle--> */
+#footer {
+background-color:#2196f3;
+padding: 20px 0 0 0;
+width:1000px;
+height:90px;
+clear:both;
+margin:20 0;
+text-align:center;
+color:white;
+border-top-left-radius:50px;
+border-bottom-right-radius:50px;
+}
+
+
+/*table biodata */
+#biodata{
+    font-family:Arial;
+    margin: 2em 0px 0px 0px;
+    border:0;
+}
+#biodata tr th{    
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: start;
+}
+#biodata tr td{
+    font-size: 1.em;
+    font-weight: normal;
+}
+
+/* table nilai */
+#nilai{
+    font-family:Arial;
+    margin: 2em 0px 0px 0px;
+    width: 100%;
+    border: 1px solid #2196f3;
+    border-collapse: collapse;
+}
+#nilai tr th{    
+   background-color: #2196f3;
+   color: white;
+   border: 1px solid #3f51b5;
+}
+#nilai tr td{
+    font-size: 1.em;
+    font-weight: normal;    
+    padding: .1em .2em .1em .2em ;
+    text-transform: capitalize;
+}
+/* daftar */
+#daftar{
+    font-family:Arial;
+    margin: 2em 0px 0px 0px;
+    width: 100%;   
+    border-collapse: collapse;
+}
+#daftar tr th{    
+   text-align: start;
+   padding: .1em .2em .1em .2em ;   
+}
+#daftar tr td{
+    font-size: 1.em;
+    font-weight: normal;    
+    padding: .1em .2em .1em .2em ;
+    text-transform: capitalize;
+}
+#daftar input[type="text"],textarea, select,input[type="radio"],input[type="checkbox"]{
+    background-color:white;    
+    border: 1px #2196f3 solid;
+    border-radius: 5px;
+    padding: 0.2em;    
+}
+#daftar input[type="submit"]{
+    background-color:#4caf50;        
+    border: 1px #5daf50 solid;
+    border-radius: 2px;
+    color: white;
+    padding: 0.2em;
+    padding: 5px 20px;
+}
+#daftar input[type="submit"]:hover{
+    background-color:#49884c;            
+}
+#daftar input[type="reset"]{
+    background-color:#f44336;        
+    border: 1px #f44336 solid;
+    border-radius: 2px;
+    color: white;
+    padding: 0.2em;
+    padding: 5px 20px;
+}
+#daftar input[type="reset"]:hover{
+    background-color:#c1281c;            
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Linargian Pratama 3311911002</title>
+    <style>
+       html, body{
+            height: 100%;
+        }
+        *{
+            box-sizing: border-box;         
+        }
+       #atas{
+           height: 30%;
+           width: 100%;
+           margin: 5px;
+           background: lightblue;
+           border: 1px solid black;
+           border-top-right-radius: 20px;
+           border-top-left-radius: 20px;
+       } 
+       #bawah{
+           height: 30%;
+           width: 100%;
+           margin: 5px;
+           background: lightblue;
+           border: 1px solid black;
+           border-bottom-right-radius: 20px;
+           border-bottom-left-radius: 20px;
+       } 
+       #content{
+           height: 30%;
+           width: 100%;
+           margin: 5px;
+           background: lightblue;
+           border: 1px solid black; 
+          
+       } 
+       #kiri{
+           background: yellow;
+           border: 2px dashed red;
+           float: left;
+           width: 30%;
+           height: 80%;
+           margin: 1%;
+       }
+       #tengah{
+           background: yellow;
+           border: 2px dashed green;
+           float: right;
+           width: 30%;
+           height: 80%;
+           margin: 1% 0px 1% 6%;
+       }  
+       #kanan{
+           background: yellow;
+           border: 2px dashed black;
+           float: right;
+           width: 30%;
+           height: 80%;
+           margin: 1%;
+       }
+       div{
+           text-align: center;          
+       }
+    </style>
+</head>
+<body>
+    <div id="atas">Sisi ATAS tanpa float.</div>
+    <div id="content">
+        <div id="kiri">Sisi KIRI float left</div>
+        <div id="tengah">Sisi TENGAH float right</div>
+        <div id="kanan">Sisi KANAN float right</div>
+    </div>
+    <div id="bawah">Sisi Bawah tanpa float.</div>
+</body>
+</html>

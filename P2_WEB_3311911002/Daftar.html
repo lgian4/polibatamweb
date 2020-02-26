@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >    
+    <!-- Ini baris komentar, tidak diproses -->
+    <title>Layout</title>
+</head>
+<body>     
+    <table>
+        <img src="LogoPoltek.png" align="left" width="130" height="130"></img>
+        <center><h2>NAMA KAMPUS</h2>
+        <H3>NAMA JURUSAN</H3>
+        <H3>ALAMAT KAMPUS</H3>
+    </table>
+    <hr size="5" color="blue">
+</center>
+<center>
+    <table border="0">
+        <tr>
+            <td colspan="4" align="center"><font color="purple">Form Biodata</font></td>
+        </tr>       
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">Nama</td>
+            <td>:</td>
+            <td><input type="text" name="nama" size="40"></td>            
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">Tgl Lahir</td>
+            <td>:</td>
+            <td><input type="text" name="tgl" size="15">/ <input type="text" name="bulan" size="15" > / <input type="text" name="tahun" size="20"></td>            
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">Alamat</td>
+            <td>:</td>
+            <td><textarea name="alamat" id="" cols="30" rows="3">  </textarea></td>                            
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">Kota</td>
+            <td>:</td>
+            <td><input type="text" name="kota"></td>                                        
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">Pekerjaan</td>
+            <td>:</td>
+            <td>
+                <select name="pekerjaan" >
+                    <option value="Tani">Tani</option>
+                    <option value="Karyawan Swasta">Karyawan Swasta</option>
+                    <option value="Penganguran">Penganguran</option>
+                </select>                
+            </td>                            
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">Jenis Kelamin</td>
+            <td>:</td>
+            <td><input type="radio" name="jk" value="Laki-laki" checked>Laki-Laki <input type="radio" name="jk" value="Perempuan">Perempuan </td>                                        
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">Hoby</td>
+            <td>:</td>
+            <td>
+                <input type="checkbox" name="Reading" >Reading<br>
+                <input type="checkbox" name="Sport" > Sport <br>
+                <input type="checkbox" name="Singing"> Singing <br>
+                <input type="checkbox" name="Travelling"> travelling
+            </td>                                        
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            
+            
+            <td>
+                <input type="submit" name="Kirim" value="Kirim">
+                <input type="reset" name="Cancel" value="Cancel">
+            </td>                                        
+        </tr>            
+    </table>
+</center>
+</body>
+</html>

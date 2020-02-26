@@ -1,0 +1,24 @@
+<html>
+    <script language="javascript">
+        function EvenTekan() {
+            var jurusanstr = (document.fform.jurusan.value);
+            document.fform.jurusanstr.value=jurusanstr;
+        }
+    </script>
+    <form name="fform">
+        Penggunaan Select<hr>
+        <pre>Pilih Jurusan : <select name="jurusan" size="1">
+            <option value="Akutansi Perpajakan">Akutansi Perpajakan</option>
+            <option value="Managemen Informatika">Manajemen Informatika</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Public Relation">Public Relation</option>
+            <option value="Akuntansi Dan Perpajakan">Akutansi dan Perpajakan</option>            
+        </select>
+        <input type="button" value="Kirim" onclick="EvenTekan()">
+        <input type="reset"><hr>
+        Jurusan: <input type="text" name="jurusanstr" size="30">
+    </pre>
+
+    </form>
+
+</html>

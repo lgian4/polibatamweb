@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Validasi Form</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function cek_data() {
+            if(document.getElementById("nama").value == ''){
+                alert("Nama tidak boleh kosong");
+                document.getElementById("nama").focus();
+                return false;
+            }
+            if(document.getElementById("alamat").value == ''){
+                alert("Alamat tidak boleh kosong");
+                document.getElementById("alamat").focus();
+                return false;
+            }
+            if(document.getElementById("email").value == ''){
+                alert("Email tidak boleh kosong");
+                document.getElementById("email").focus();
+                return false;
+            }
+            if(document.getElementById("hp").value == ''){
+                alert("Nomor HP tidak boleh kosong");
+                document.getElementById("hp").focus();
+                return false;
+            }
+            document.getElementById("form1").submit();
+        }
+    </script>
+    <form action="" method="POST" id="form1" name="form1">
+        <dl>
+            <dt>Nama</dt>
+            <dd><input type="text" name="nama" id="nama"/></dd>
+            <dt>Alamat</dt>
+            <dd><input type="text" name="alamat" id="alamat"/></dd>
+            <dt>Email</dt>
+            <dd><input type="text" name="email" id="email"/></dd>
+            <dt>No Hp</dt>
+            <dd><input type="text" name="hp" id="hp"/></dd>
+            <dt></dt>
+            <dd><input type="button" value="Save" id="save" name="save" onclick="cek_data(); return false;"/></dd>
+        </dl>
+    </form>
+</body>
+</html>

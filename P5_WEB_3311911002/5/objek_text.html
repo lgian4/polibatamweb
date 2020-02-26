@@ -1,0 +1,16 @@
+<form name="form">
+    <script>
+        function proses() {
+            var nama2 = document.form.nama.value;
+            var alamat2 = document.form.alamat.value;
+            alert("Nama : "+ nama2 + " Alamat: "+ alamat2);
+        }
+    </script>
+    <pre>
+        Masukkan dengan Input Type=Text
+        Nama    : <input type="text" size="10" name="nama">
+        Alamat  : <input type="text" size="20" name="alamat">        
+    </pre>
+    <input type="button" value="proses" onclick="proses()">
+    <input type="reset">
+</form>
